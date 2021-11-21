@@ -1,38 +1,351 @@
-.App {
+
+  
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+
+body {
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+}
+
+a {
+  color: #149ddd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #37b3ed;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*-----Navbar style---------*/
+
+
+
+
+
+/*--home page style---*/
+.homedivcls{
+  min-height: 100vh;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color:lightgray;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.tempcls1{
+  padding-top: 50px;;
+  text-align: left;
+  
+}
+.tempcls1 h4,.tempcls1 h5{
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.tempcls2{
+  color:whitesmoke; /*aquamarine*/
+  
+}
+.tempcls2 h3{
+  text-align: center;
+  position: relative;
+  top: 40%;
+  -ms-transform: translateY(-40%);
+  -webkit-transform: translateY(-40%);
+  transform: translateY(-40%);
+}
+
+.tempcls3 :hover{
+  background-color: #37b3ed;
+}
+
+.tempcls4{
+  align-items: center;
+}
+
+.imgcls2{
+  border-radius: 50%;
+  
+}
+
+.imgcls2:hover{
+  height: 170px;
+  
+}
+
+.tempcls5 {
+  animation: sde_rotate 6s linear infinite;
+  color:aqua;
+}
+
+
+ @keyframes sde_rotate{
+  0%{
+      transform: rotate(0deg);
+  }
+  50%{
+      transform: rotate(180deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+} 
+.tempcls6{
+  margin-top: 50px;;
+}
+
+
+
+/*----------About page style -----------*/
+
+.about{
+  color: antiquewhite;
+}
+
+.imgcls4{
+  border-style: groove;
+  border-width: 3px;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about .content ul i {
+  font-size: 20px;
+  margin-right: 5px;
+  color:blueviolet;
+  line-height: 0;
+}
+
+/*--- education page style---*/
+.educls1{
+  margin-top: 20px;;
+  margin-bottom: 20px;
+}
+.educls1 .card{
+  /* width: 300px; */
+  height: 460px;
+  overflow:hidden;
+}
+.educls1 .card img {
+  /* width: 300px; */
+  height: 250px;
+}
+
+.educls1 .tempcls7 {
+  font-size: 20px;
+  margin-right: 5px;
+  color:blueviolet;
+  line-height: 0;
+}
+
+.tempcls8{
+  margin-top: 20px ;
+  margin-left: 50px;
+}
+
+.tempcls23{
+  width:150px;
+}
+
+/*---experience page style----*/
+
+.expcls1 .float-layout {
+  padding: 5px 5px;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.expcls1 .card-container {
+  overflow: hidden;
+}
+
+.expcls1 .card {
+  background-color: whitesmoke;
+  color: black;
+  min-height: 100%; /*replace this it in width: 100%*/
+  width: 50%;
+  float: right;
+}
+
+.expcls1 .card-title {
+  font-size: 20px;
+  text-align: center;
+  font-weight:700;
+  padding-top: 20px;
+  font-style:italic;
+}
+
+.expcls1 .card-desc {
+  padding: 10px;
+  text-align: left;
+  font-size: 12px;
+}
+
+/*add this it*/
+.expcls1 .card-image {
+  display: flex;
+}
+/*-------------*/
+
+.expcls1 div.card-image img {
+  width: 40%;
+  height: auto;
+}
+
+/* Phone Devices Query */
+@media only screen and (max-width: 37.5em) {
+  .expcls1 div.card-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /*add this it*/
+  .expcls1 .card-image {
+     flex-direction: column;
+  }
+  /*----------------------*/
+
+  .expcls1 .card {
+    width: 100%;
+    margin-top: -4px;
+  }
+}
+
+
+.expcls1 .tempcls7 {
+  font-size: 20px;
+  margin-right: 5px;
+  color:blueviolet;
+  line-height: 0;
+}
+
+
+.tempcls9{
+  color: antiquewhite;
+}
+
+.tempcls10{
+  border-width: 2px ;
+  border-style: groove;
+  padding: 10px;
+}
+
+.tempcls11{
+  color: aquamarine;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.tempcls12{
+  color: bisque;
+}
+
+/*---- tech card style ---*/
+
+.tempcls13{
+  font-size: 11px;
+}
+
+.tempcls14{
+  height: 30px;
+}
+
+.tempcls15{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tempcls16{
+  margin-top: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.tempcls18{
+  height: 120px;
+   overflow-y:scroll; 
+}
+
+.tempcls19{
+  height: 50px;;
+}
+
+.tempcls20{
+  margin-bottom: 15px;;
+}
+
+
+.jumbotron {
+  background: #358CCE;
+  color: #FFF;
+  border-radius: 0px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .jumbotron-sm { padding-top: 24px;
+  padding-bottom: 24px; }
+  .jumbotron small {
+  color: #FFF;
   }
-  to {
-    transform: rotate(360deg);
+  .h1 small {
+  font-size: 24px;
   }
-}
+
+  .tempcls21{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .tempcls21:hover{
+    color:chartreuse;
+    font-size: 60px;;
+  }
+
+  .tempcls22{
+    font-size: 30px;
+    color:yellow
+  }
